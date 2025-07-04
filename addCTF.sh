@@ -17,7 +17,7 @@ while getopts 'ht:v' flag; do
        exit 1 ;;
   esac
 done
-#echo $target_pdf
+
 exiftool $target_pdf -Title="https://github.com/Jaycossey" -Creator="S2F3YXNha2kgVnVsY2Fu" -Producer="ChecyrPbjGurbel!"
 
 echo "File updated, check below is accurate:\n"
