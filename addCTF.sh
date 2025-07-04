@@ -1,6 +1,5 @@
 #! /bin/bash
 
-help=''
 target_pdf=''
 verbose='false'
 
@@ -20,5 +19,7 @@ done
 
 exiftool $target_pdf -Title="https://github.com/Jaycossey" -Creator="S2F3YXNha2kgVnVsY2Fu" -Producer="ChecyrPbjGurbel!"
 
-echo "File updated, check below is accurate:\n"
-exiftool $target_pdf
+if $verbose; then
+  echo "File updated, check below is accurate:\n"
+  exiftool $target_pdf;
+fi
